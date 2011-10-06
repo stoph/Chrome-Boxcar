@@ -1,0 +1,22 @@
+{
+	"name": "Boxcar",
+	"description": "Post messages to Boxcar",
+	"version": "1.0",
+	"icons": {
+		"16": "images/BoxCar-16.png",
+		"32": "images/BoxCar-32.png",
+		"64": "images/BoxCar-64.png",
+		"128": "images/BoxCar-128.png"
+	},
+	"options_page": "options.html",
+	"browser_action": {
+		"default_title": "Post to BoxCar",
+		"default_icon": "images/Boxcar-16.png",
+		"default_popup": "boxcar.html"
+	},
+	"permissions": [
+		"tabs", "http://*/*", "https://*/*",
+	    "http://dev.christophkhouri.com/",
+	    "https://boxcar.io/"
+	]
+}

@@ -1,0 +1,48 @@
+<html>
+	<head>
+		<title>Chrome Boxcar</title>
+		
+		<link href="http://boxcar.io/stylesheets/base.css?1314632263" media="screen" rel="stylesheet" type="text/css" />
+
+		<link href="http://boxcar.io/stylesheets/formtastic.css" media="screen" rel="stylesheet" type="text/css" />
+		<link href="http://boxcar.io/stylesheets/forms.css" media="screen" rel="stylesheet" type="text/css" />
+		<link href="http://boxcar.io/stylesheets/common.css" media="screen" rel="stylesheet" type="text/css" />
+		<link href="http://boxcar.io/stylesheets/public.css" media="screen" rel="stylesheet" type="text/css" />  
+		<script type="text/javascript" src="boxcar.js"></script>
+	</head>
+	
+	<body onload="loadSettings()">
+	<header id="header">
+		<nav class="wrapper">
+			<a href="/inbox" id="home_link" rel="View Messages" title="View Messages">Chrome Boxcar</a>
+		</nav>
+	</header>
+	<section id="wrapper">
+		<section id="content">
+			<section id="main" role="main">
+				<div id="inner">
+					<h1>Chrome Boxcar</h1>
+					
+					<p>Chrome Boxcar enables you to send the link for the current open tab to Boxcar. Simply click the Boxcar icon next to your Google Chrome address bar.</p>
+					
+					<form class="formtastic">
+						<h2>Enter your username and password below</h2>
+						<ul class="form">
+							<li><label for="username">Boxcar Username</label><input type="text" name="username" id="username"></li>
+							<li><label for="password">Boxcar Password</label><input type="password" name="password" id="password"></li>
+						</ul>
+						<span id="notice" style="display:none;"></span>
+						<span id="message" style="display:none;"></span>
+						<br/>
+							
+						<button onclick="saveSettings()" id="save" title="Save Settings">Save</button>
+						<button onclick="clear()" title="Clear local storage" id="clear">Clear</button>
+					</form>
+					<br>
+				</div>	
+			</section>
+		</section>
+	</section>
+		
+</body>
+</html>
